@@ -44,12 +44,12 @@ section {
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 100px;
+  font-size: 10vw;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 5vw;
   font-weight: normal;
   color: var(--on-background-alt);
 }
@@ -61,7 +61,7 @@ nav {
   font-family: Oswald, sans-serif;
   font-size: 24px;
   letter-spacing: 3px;
-  padding: 25px;
+  padding: 0px 25px;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
 }
@@ -94,7 +94,7 @@ a:focus {
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px 20px;
-  margin-right: 25px;
+  margin: 25px;
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
@@ -106,7 +106,7 @@ img {
 }
 
 /* Projects Section */
-.buttons {
+/* .buttons {
   margin-top: 15px;
   margin-bottom: 50px;
 }
@@ -169,12 +169,12 @@ button:hover:not(.outline) {
 p {
   margin: 0;
   line-height: 25px;
-}
+} */
 
 /* Contact Section */
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin-left: 50px;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -189,8 +189,8 @@ p {
   align-items: center;
   z-index: 100;
   position: fixed;
-  right: 25px;
-  top: 30px;
+  right: 15px;
+  top: 600px;
 }
 
 .theme-switch-wrapper span {
@@ -257,4 +257,11 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+/* Media Query for Smartphone with vertical screen */
+@media screen (max-width: 800px) {
+  body {
+    width: 100%;
+  }
 }
